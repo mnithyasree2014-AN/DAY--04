@@ -1,0 +1,11 @@
+Sanjay wants to know whether the user input is Automorphic number or not.
+n = int(input())
+if n<=9 and n>=1:
+    square = n * n
+    d = len(str(n))
+    if square % (10**d) == n:
+        print(f"The Number {float(n)} is Automorphic Number")
+    else:
+        print(f"The Number {float(n)} is Not Automorphic Number")
+else:
+    print("Invalid Input")
